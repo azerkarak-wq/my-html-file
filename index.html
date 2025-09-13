@@ -37,7 +37,7 @@
     <small>Lütfen aşağıdaki kısa anketi doldurunuz. • <em>Zorunlu alanlar *</em></small>
   </header>
   <main>
-    <form id="anketForm">
+    <form id="anketForm" action="https://formspree.io/f/mgvlqlqj" method="POST">
       <!-- Katılımcı Bilgileri -->
       <section class="card">
         <h2>Katılımcı Bilgileri</h2>
@@ -139,19 +139,12 @@
 
       <div class="actions">
         <button type="submit" class="primary">Yanıtı Kaydet</button>
-        <button type="button" id="exportCsv" class="ghost">Tüm Yanıtları CSV Olarak İndir</button>
+        
         <span id="saveMsg" class="success"></span>
       </div>
     </form>
 
-    <div class="card">
-      <h2>Notlar</h2>
-      <ul>
-        <li>Bu form, talep ettiğiniz bütün alanları içerir: <em>Ad Soyad, E-posta, Telefon, Demografi, Bizi nereden duydunuz?, Etkinlik beklentileri, İletişim & Sosyal Medya</em>.</li>
-        <li>Yanıtlar tarayıcı <strong>LocalStorage</strong>'a kaydedilir ve <em>CSV</em> olarak indirilebilir.</li>
-        <li>İsterseniz yanıtların Google Sheet'e akması için kolay bir bağlantı ekleyebilirim.</li>
-      </ul>
-    </div>
+    
   </main>
 
   <footer>
